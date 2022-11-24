@@ -1,0 +1,226 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #ecf0f1;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+#header{
+    position: fixed;
+    width: 100%;  
+    overflow: hidden;
+    background-color: #ecf0f1;
+    padding: 1rem;
+}
+
+#header > img{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    vertical-align: middle;
+}
+
+#header  .title-logo{
+    display: inline-block;
+    vertical-align: middle;
+    width: auto;
+    margin: 0 0 0 1rem;
+    padding: 0;
+}
+
+#header nav{
+    display: inline;
+    float: right;
+}
+
+#header nav ul{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0;
+}
+
+#header nav ul li{
+    list-style: none;
+}
+
+#header nav ul li a{
+    display: inline-block;
+    padding: 1em 4em;
+}
+
+main{
+    padding-top: 100px;
+}
+
+main .content, footer{
+    width: 100%;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.content{
+    padding: 1rem;
+}
+
+.content #subcription{
+    text-align: center;
+    margin-bottom: 8rem;
+}
+
+#subcription  h1{
+    font-size: 3.5rem;
+    margin-bottom: 2rem;
+}
+
+#subcription input[type="email"]{
+    width: 350px;
+    margin-bottom: 1rem;
+    padding: .5rem .3rem;
+}
+
+#subcription input[type="submit"]{
+    display: block;
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: .5rem .3rem;
+    background-color: #f1c40f;
+    font-size: 1em;
+    font-weight: 800;
+    border: 0;
+}
+
+#details{
+    margin-bottom: 2rem;
+} 
+
+#details .flex{
+    display: flex;
+
+}
+
+#details .flex .fas{
+    font-size: 3.5rem;
+    color: #16a085;
+    margin-right: 5rem;
+}
+
+.content .detail > h2{
+    margin-bottom: 0.5rem;
+}
+
+.content .detail > p{
+    line-height: 1.8rem;
+    margin-bottom: 2rem;
+}
+
+.content #demostration iframe{
+    display: block;
+    width: 100%;
+    max-width: 860px; 
+    height: 450px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.content #specifications{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 4rem 0;
+}
+
+.content #specifications article{
+ 
+  width: 30%;
+  height: auto;
+  padding-bottom: 1rem;
+  text-align: center;
+  border: 1px solid #000;
+  
+}
+
+.content #specifications article > h2{
+    margin-bottom: 1rem;
+    padding: 1rem;
+    background-color: #ced6e0;
+
+}
+
+.content #specifications article > p{
+    
+    line-height: 1.8rem;
+}
+
+footer{
+    padding: 1rem;
+    background-color: #ced6e0;
+}
+
+footer #nav-footer ul{
+    display: flex;
+    justify-content: flex-end;
+}
+
+footer #nav-footer ul li{
+    list-style: none;
+    margin: 10px;
+}
+footer  .copyright{
+    text-align: right;
+    color: #636e72;
+}
+
+@media screen and (max-width: 769px) {
+
+
+#header nav{
+    display: inline;
+    float: none;
+}
+
+    #header nav ul{
+        justify-content: space-between;
+        flex-shrink: 1;
+    }
+
+    #header nav ul li a{
+        padding: 1em 2em;
+    }
+    
+    main{
+        padding-top: 150px;
+    }
+
+    .content #specifications{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .content #specifications article{
+ 
+        width: 350px;
+        margin-bottom: 1rem;        
+      }
+
+      footer #nav-footer ul{
+       flex-direction: column;
+       align-items: center;
+        
+    }
+
+    footer .copyright{
+        text-align: center;
+    }
+    
+}
